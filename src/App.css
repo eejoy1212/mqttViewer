@@ -1,0 +1,173 @@
+.App {
+  /* text-align: center; */
+  /* padding: 50px; */
+  /* padding: 20px; */
+  height: 100vh;
+  /* overflow: hidden; */
+  /* width: 100vw; */
+
+  /* 수정테스트 */
+}
+
+.title {
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.filebox {
+  display: flex;
+  align-items: center;
+}
+.filebox .upload-name {
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: 1px solid #dddddd;
+  width: 78%;
+  color: #999999;
+}
+.filebox label {
+  /* display: inline-block; */
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 14px;
+  /* vertical-align: middle; */
+  background-color: #22a699;
+  cursor: pointer;
+  width: 200px;
+  height: 22px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filebox label:hover {
+  opacity: 0.7;
+}
+.filebox input[type='file'] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  overflow: scroll;
+}
+.jsonContents {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 30px;
+  /* background-color: blueviolet; */
+}
+.sizedbox {
+  width: 20px;
+}
+.key {
+  /* background-color: red; */
+  /* width: 150px; */
+  min-width: 120px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.colorChip {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+.App > ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* padding: 20px; */
+}
+.App > ul > li {
+  width: 24%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  /* border-right: 1px solid #ddd; */
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.App > ul > li:last-child {
+  /* width: 100%;
+  height: 100vh; */
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.commanduL {
+  height: 100%;
+  overflow: scroll;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.commandLi {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  /* justify-content: center; */
+  gap: 30px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.liTitle {
+  /* height: 5%; */
+  width: 90%;
+  /* margin: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #22a699;
+}
+.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.svListen {
+  z-index: 999;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  overflow: scroll;
+}

@@ -1,0 +1,64 @@
+{
+  "main": "main.js",
+  "homepage": "./",
+  "name": "mdv",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@electron/remote": "^2.0.10",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3",
+    "electron": "^25.4.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-reloader": "^1.2.3",
+    "fs": "^0.0.1-security",
+    "mqtt": "4.2.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
+    "react-json-view-lite": "^0.9.8",
+    "react-json-viewer": "^3.0.1",
+    "react-loader-spinner": "^5.3.4",
+    "react-scripts": "4.0.3",
+    "react-uuid": "^2.0.0",
+    "url": "^0.11.1",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "concurrently -k \"cross-env yarn electron:react\" \"yarn electron:start\"",
+    "electron:build": "",
+    "electron:start": "wait-port http://:3001 && electron .",
+    "electron:react": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "wait-port": "^1.0.4"
+  }
+}

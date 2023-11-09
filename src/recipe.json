@@ -1,0 +1,41 @@
+{
+  "id": "0c0c721c-c3c3-47f6-83d9-3562a85f5aaa",
+  "recipeType": "WAVE",
+  "recipeName": "ra",
+  "selectedRecipe": true,
+  "active": true,
+  "window": [
+    {
+      "id": "498c4e11-3da1-4a6c-b43f-60602a52a6ed",
+      "name": "wa",
+      "statistics": {
+        "name": 0
+      },
+      "start": {
+        "selectedType": "trigger",
+        "input": "vs1>0"
+      },
+      "end": {
+        "selectedType": "length",
+        "input": "2500"
+      },
+      "period": 0
+    },
+    {
+      "id": "bec4cadc-c787-46c6-94dd-7669dc17b8cf",
+      "name": "wb",
+      "statistics": {
+        "name": 1
+      },
+      "start": {
+        "selectedType": "trigger",
+        "input": "vs2>0"
+      },
+      "end": {
+        "selectedType": "length",
+        "input": "2500"
+      },
+      "period": 0
+    }
+  ]
+}
